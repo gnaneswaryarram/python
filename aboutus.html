@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>About Us - Diabetic Retinopathy Detection</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='background.jpg') }}"); /* Background image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        <div>
+            <h1>About Us</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Project</a>
+        <a href="/predict">Prediction</a>
+        <a href="/aboutus">About Us</a>
+        <a href="/metrics">Metrics</a>
+        <a href="/flowchart">Flowchart</a>
+        
+    </nav>
+    <main>
+        <section class="about-section">
+            <h2>Meet the Creator</h2>
+            <div class="profile">
+                <img src="{{ url_for('static', filename='my_picture.jpg') }}" alt="Your Name" class="profile-pic">
+                <div class="details">
+                    <h3>Gnaneswar Reddy </h3>
+                    <p>
+                        Hello! I am Gnaneswar Reddy, a final-year B.Tech student specializing in Computer Science. 
+                        My passion lies in developing AI solutions that make a real-world impact. This project reflects my dedication to leveraging 
+                        technology for early detection of Diabetic Retinopathy, aiming to improve healthcare outcomes.
+                    </p>
+                    <p>
+                        Feel free to reach out to me for collaboration or queries. Together, let's create technology that transforms lives.
+                    </p>
+                    <ul class="contact-info">
+                        <li><strong>Email:</strong> gnaneswarreddyyarram@gmail.com</li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gnaneswar-reddy-yarram-715120284/" target="_blank">linkedin.com/in/gnaneswar-reddy</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/gnaneswaryarram" target="_blank">github.com/gnaneswaryarram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Diabetic Retinopathy Detection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
